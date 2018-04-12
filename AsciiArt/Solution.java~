@@ -1,0 +1,37 @@
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+class Solution {
+    
+    public static void main(String args[]){
+	
+	Scanner in = new Scanner(System.in);
+        int L = in.nextInt();
+        int H = in.nextInt();
+	String artArray[] = new String[L];
+
+	if (in.hasNextLine()){
+            in.nextLine();
+        }
+        String T = in.nextLine();
+        for (int i = 0; i < H; i++){    //going down the rows inputting the string
+            String ROW = in.nextLine();
+
+	    artArray[i] = ROW;
+	}
+
+	System.out.println(artArray);
+        
+        // create an array to store alphabet art
+	/* Test
+	System.out.println(L);
+	System.out.println(H);
+	System.out.println(T);
+	*/
+
+
+        
+       
+    }
+}
