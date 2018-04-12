@@ -9,30 +9,22 @@ class Solution {
 	Scanner in = new Scanner(System.in);
         int L = in.nextInt();
         int H = in.nextInt();
-	
-
-	if (in.hasNextLine()){
+	String[] arr = new String[H];
+	if (in.hasNextLine()) {
             in.nextLine();
         }
         String T = in.nextLine();
-        for (int i = 0; i < H; i++){    //going down the rows inputting the string
-            String ROW = in.nextLine();
-	    char[] artArray = ROW.toCharArray();
+        for (int i = 0; i < H; i++) {
+            arr[i] = in.nextLine();
+        }
 
-	    for (int j = 0; j < ROW.length; j++)
-		
-		}
-	System.out.println(artArray);
-        
-        // create an array to store alphabet art
-	/* Test
-	System.out.println(L);
-	System.out.println(H);
-	System.out.println(T);
-	*/
+        // Write an action using System.out.println()
+        // To debug: System.err.println("Debug messages...");
 
-
-        
-       
+        System.out.println(arr[0]);
+	System.out.println(arr[1]);
+	System.out.println(arr[2]);
     }
 }
+
+              

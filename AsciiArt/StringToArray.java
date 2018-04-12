@@ -1,13 +1,18 @@
 class StringToArray{
     public static void main(String args[]){
 	
-	Scanner userInput = new Scanner( System.in );
-        System.out.println("Type a string: ");
-        char[] userInputString = userInput.nextLine().toCharArray();
+	Scanner in = new Scanner(System.in);
+        int L = in.nextInt();
+        int H = in.nextInt();
+        if (in.hasNextLine()) {
+            in.nextLine();
+        }
+        String T = in.nextLine();
+        for (int i = 0; i < H; i++) {
+            String ROW = in.nextLine();
+        }
 
-	for(int i = 0; i < userInputString.length; i++){
-	    if(!String.valueOf(userInputString[i]).equals(" "))
-		System.out.print(userInputString[i]+",");
-	}
+        
+        System.out.println(ROW);
     }
 }
